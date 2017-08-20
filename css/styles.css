@@ -1,8 +1,9 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
 body {
     font-family: 'Lato', sans-serif;
     color: #747704;
     font-weight: 300;
-
 }
 
 .text-muted {
@@ -21,10 +22,8 @@ body {
     margin-top: 20px;
 }
 
-
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
-
 /* fontawesome */
 [class*="fontawesome-"]:before {
   font-family: 'FontAwesome', sans-serif;
+  font-size: 25px;
 }
