@@ -22,9 +22,9 @@ body {
 }
 
 
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(http://weloveiconfonts.com/api/?family=brandico);
 
-/* fontawesome */
-[class*="fontawesome-"]:before {
-  font-family: 'FontAwesome', sans-serif;
+/* brandico */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
 }

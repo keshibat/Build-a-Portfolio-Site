@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=fontawesome"/>
+    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=brandico"/>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
@@ -21,11 +21,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <img class="title-logo" src="http://placehold.it/555x300" alt="Udacity Logo">
+                <img class="title-logo" src="images/logo.png" alt="Raglan Logo">
             </div>
             <div class="col-md-6 text-right text-uppercase">
                 <h1 class="title-super text-thin">Kensuke Shibata</h1>
-                <h4>Front-End Ninja</h4>
+                <h4>Full Stuck Web Developer</h4>
             </div>
         </div>
         <div class="row">
@@ -35,7 +35,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <img class="img-responsive" src="http://placehold.it/1140x350" alt="Centoral">
+                <img class="img-responsive" src="images/center.png" alt="Centoral">
             </div>
         </div>
         <div class="row">
@@ -45,47 +45,85 @@
         </div>
         <div class="row text-center">
             <div class="col-md-4">
-                <img class="img-responsive " src="http://placehold.it/555x300" data-toggle="modal" data-target="#project1"alt="CodeYourOwnQuiz">
-                <h3 class="text-uppercase">Code Your Own Quiz</h3>
+                <img class="img-responsive " src="images/madlib_quiz.png" data-toggle="modal" data-target="#project1" alt="CodeYourOwnQuiz image">
+                <h3 class="text-uppercase">Python Quiz</h3>
                 <p class="project-description">
                     Fill-in-the blank style to create a quiz
                 </p>
                 <p class="project-link">
-                <a href="https://github.com/keshibat/udacity_into_to_programming_project2" class=“fontawesome-github”>GitHub</a>
+                <a href="https://github.com/keshibat/udacity_into_to_programming_project2"><i class="brandico-github"></i></a>
                 </p>
             </div>
             <div class="col-md-4">
-                <img class="img-responsive " src="http://placehold.it/555x300" alt="Sunflower">
+                <img class="img-responsive " src="images/moviewebsite.png" alt="moviewebsite image">
                 <h3 class="text-uppercase">Create a Movie Website</h3>
                 <p class="project-description">
                     Movie Website which store a list of my favorite movies
                 </p>
                 <p class="project-link">
-                <a href="https://github.com/keshibat/udacity_into_to_programming_project3" class=“fontawesome-github”>GitHub</a>
+                    <a href="https://github.com/keshibat/udacity_into_to_programming_project3" ><i class="brandico-github"></i></a>
                 </p>
             </div>
             <div class="col-md-4">
-                <img class="img-responsive " src="http://placehold.it/555x300" alt="Bokeh">
-                <h3 class="text-uppercase">Build A Portfolio SITE</h3>
+                <img class="img-responsive " src="images/portfolio.png" alt="portfolio image">
+                <h3 class="text-uppercase">Online Resume</h3>
                 <p class="project-description">
-                    Interactive Resume
+                    My Online Resume using Javascript
                 </p>
                 <p class="project-link">
-                <a href="https://github.com/keshibat/udacity_Front_End_project2" class=“fontawesome-github”>GitHub</a>
+                    <a href="https://github.com/keshibat/udacity_Front_End_project2"><i class="brandico-github"></i></a>
                 </p>
             </div>
         </div>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- Modal for Fill In The Blanks Quiz-->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="python-quiz" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+                    <h4 class="modal-title" id="python-quiz">Fill In The Blanks Quiz</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="http://placehold.it/555x300" data-toggle="modal" data-target="#project1"> We’ve got a symbol in my driveway I've got a hundred million dollar friends I've got you a brand new weapon Let's see how destructive we can be Got a brand new set of stencils I’ve been connecting all the dots Got my plans in a zip-lock bag Let's see how unproductive we can be I've got a light bulb full of anger And I can switch it on and off Situations that can be so bright I can't believe How pathetic we can be
+                    <img class="img-responsive" src="images/madlib_quiz.png" data-toggle="modal" data-target="#project1">
+                    <p>The quiz will prompt a user with a sentence containing several blanks. The user should then be asked to fill in each blank appropriately to complete the sentence. The user will choose one level out of three (easy, medium and hard) to play the quiz.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Movie Trailer Website-->
+        <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="movie-website" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="movie-website">Movie Trailer Website</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/madlib_quiz.png" data-toggle="modal" data-target="#project2">
+                    <p>Project uses server-side code to dynamically create a website of movies using
+                    object-oriented Python. Store a list of your favorite movies, including box art imagery and a movie trailer URL. Generate a static web page allowing visitors to browse their movies and watch the trailer.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Online Resume-->
+            <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="online-resume" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="movie-website">Online Resume</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/madlib_quiz.png" data-toggle="modal" data-target="#project3"> Project uses server-side code to dynamically create a website of movies using
+                    object-oriented Python. Store a list of your favorite movies, including box art imagery and a movie trailer URL. Generate a static web page allowing visitors to browse their movies and watch the trailer.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -94,5 +132,4 @@
         </div>
     </div>
 </body>
-
 </html>
