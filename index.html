@@ -1,135 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html>
+<head lang="en">
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1">
-    <!-- Setting Viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="Online Portfolio Site" name="description">
+    <meta content="HTML,CSS,JavaScript" name="keywords">
+    <meta content="Kensuke Shibata" name="author"><!-- Setting Viewport -->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>My Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=brandico"/>
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="http://weloveiconfonts.com/api/?family=brandico" rel="stylesheet">
 </head>
-
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <img class="title-logo" src="images/logo.png" alt="Raglan Logo">
-            </div>
-            <div class="col-md-6 text-right text-uppercase">
-                <h1 class="title-super text-thin">Kensuke Shibata</h1>
-                <h4>Full Stuck Web Developer</h4>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <hr>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <img class="img-responsive" src="images/center.png" alt="Centoral">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="text-muted">Featured Work</h2>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-4">
-                <img class="img-responsive " src="images/madlib_quiz.png" data-toggle="modal" data-target="#project1" alt="CodeYourOwnQuiz image">
-                <h3 class="text-uppercase">Python Quiz</h3>
-                <p class="project-description">
-                    Fill-in-the blank style to create a quiz
-                </p>
-                <p class="project-link">
-                <a href="https://github.com/keshibat/udacity_into_to_programming_project2"><i class="brandico-github"></i></a>
-                </p>
-            </div>
-            <div class="col-md-4">
-                <img class="img-responsive " src="images/moviewebsite.png" alt="moviewebsite image">
-                <h3 class="text-uppercase">Create a Movie Website</h3>
-                <p class="project-description">
-                    Movie Website which store a list of my favorite movies
-                </p>
-                <p class="project-link">
-                    <a href="https://github.com/keshibat/udacity_into_to_programming_project3" ><i class="brandico-github"></i></a>
-                </p>
-            </div>
-            <div class="col-md-4">
-                <img class="img-responsive " src="images/portfolio.png" alt="portfolio image">
-                <h3 class="text-uppercase">Online Resume</h3>
-                <p class="project-description">
-                    My Online Resume using Javascript
-                </p>
-                <p class="project-link">
-                    <a href="https://github.com/keshibat/udacity_Front_End_project2"><i class="brandico-github"></i></a>
-                </p>
-            </div>
-        </div>
-    </div>
+    <div class="container-fluid">
 
-    <!-- Modal for Fill In The Blanks Quiz-->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="python-quiz" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="python-quiz">Fill In The Blanks Quiz</h4>
+        <header>
+                <div class="col-md-6"><img alt="Online Logo Image" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" src="images/logo.png" srcset="images/logo.png 320w, images/logo.png 480w, images/logo.png 800w"></div>
+                <div class="col-md-6 text-right text-uppercase">
+                    <h1 class="title-super text-thin">Kensuke Shibata</h1>
+                    <h4>Full Stuck Web Developer</h4>
                 </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="images/madlib_quiz.png" data-toggle="modal" data-target="#project1">
-                    <p>The quiz will prompt a user with a sentence containing several blanks. The user should then be asked to fill in each blank appropriately to complete the sentence. The user will choose one level out of three (easy, medium and hard) to play the quiz.
-                    </p>
+            </div>
+        </header>
+        <main>
+            <!--  main content of a document -->
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            <div class="row">
+                <div class="col-md-12"><img alt="Center Image" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" src="images/center.png" srcset="images/center.png 320w, images/center.png 480w, images/center.png 800w"></div>
+            </div>
+            <section class="Featured Work">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="text-muted">Featured Work</h2>
+                    </div>
+                </div>
+            </section>
+            <section class="featured work">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <img alt="Python Quiz Image" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" src="images/madlib_quiz.png" srcset="images/madlib_quiz.png 320w, images/madlib_quiz.png 480w, images/madlib_quiz.png 800w"">
+                        <h3 class="text-uppercase">Python Quiz</h3>
+                        <p class="project-description">Fill-in-the blank style to create a quiz</p>
+                        <p class="project-link"><a href="https://github.com/keshibat/Fill_in_blank_quiz" target="_blank"><i class="brandico-github"></i></a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="MovieWebsite Image" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" src="images/moviewebsite.png" srcset="images/moviewebsite.png 320w, images/moviewebsite.png 480w, images/moviewebsite.png 800w">
+                        <h3 class="text-uppercase">Create a Movie Website</h3>
+                        <p class="project-description">Movie Website which store a list of my favorite movies</p>
+                        <p class="project-link"><a href="https://github.com/keshibat/Moive_Website" target="_blank"><i class="brandico-github"></i></a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="Online Resume Image" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" src="images/portfolio.png" srcset="images/portfolio.png 320w, images/portfolio.png 480w, images/portfolio.png 800w">
+                        <h3 class="text-uppercase">Online Resume</h3>
+                        <p class="project-description">My Online Resume using Javascript</p>
+                        <p class="project-link"><a href="https://github.com/keshibat/Resume_JS" target="_blank"><i class="brandico-github"></i></a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="Logs Analysis" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" src="images/log_analysis.png" srcset="images/log_analysis.png 320w, images/portfolio.png 480w, images/log_analysis.png 800w">
+                        <h3 class="text-uppercase">Logs Analysis</h3>
+                        <p class="project-description">Python program using the psycopg2 module to connect to the database.</p>
+                        <p class="project-link"><a href="https://github.com/keshibat/Logs-Analysis" target="_blank"><i class="brandico-github"></i></a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="Online Resume Image" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" src="images/item_catalog.png" srcset="images/item_catalog.png 320w, images/item_catalog.png 480w, images/item_catalog.png 800w">
+                        <h3 class="text-uppercase">Item Catalog</h3>
+                        <p class="project-description">Item Catalog built with Python Flask, Jinja2 and Bootstrap.</p>
+                        <p class="project-link"><a href="https://github.com/keshibat/Item_Catalog" target="_blank"><i class="brandico-github"></i></a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="Online Resume Image" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" src="images/linux.png" srcset="images/linux.png 320w, images/portfolio.png 480w, images/linux.png 800w">
+                        <h3 class="text-uppercase">Linux Server Configuration</h3>
+                        <p class="project-description">Linux Ubuntu server with Apache2, hosted on a AWS.</p>
+                        <p class="project-link"><a href="https://github.com/keshibat/LinuxServerConfiguration" target="_blank"><i class="brandico-github"></i></a></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="https://www.linkedin.com/in/kensuke-shibata-458793103" target="_blank"><i class="brandico-linkedin"></i></a> <a href="https://github.com/keshibat" target="_blank"><i class="brandico-github"></i></a>
+                </div>
+            </div>
+        </footer>
+        <!-- Modal for Fill In The Blanks Quiz image-->
+        <div aria-hidden="true" aria-labelledby="project1-modal" class="modal fade" id="project1" data-toggle="modal" role="dialog" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="project1-modal">Fill In The Blanks Quiz</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img alt="madlib_quiz Image" class="img-responsive" data-target="project1" data-toggle="modal" src="images/madlib_quiz.png">
+                        <p>The quiz will prompt a user with a sentence containing several blanks. The user should then be asked to fill in each blank appropriately to complete the sentence. The user will choose one level out of three (easy, medium and hard) to play the quiz.<a href="https://github.com/keshibat/Fill_in_blank_quiz">here</a></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Modal for Movie Trailer Website-->
+        <div aria-hidden="true" aria-labelledby="project2-modal" class="modal fade" id="project2" data-toggle="modal" role="dialog" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="project2-modal">Movie Trailer Website</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img alt="MovieWebStie Image" class="img-responsive" data-toggle="modal" data-target="project2" src="images/moviewebsite.png">
+                        <p>Project uses server-side code to dynamically create a website of movies using object-oriented Python. Store a list of your favorite movies, including box art imagery and a movie trailer URL. Generate a static web page allowing visitors to browse their movies and watch the trailer.<a href="https://github.com/keshibat/Moive_Website">here</a></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Modal for Online Resume-->
+        <div aria-hidden="true" aria-labelledby="project3-modal" class="modal fade" id="project3" role="dialog" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="project3-modal">Online Resume</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img alt="Portfolio Image" class="img-responsive" data-target="project3" data-toggle="modal" src="images/portfolio.png">
+                        <p>It is a simple one page interactive resume featuring a Google Map of the places I have lived, went to school, and worked.This project was built using a javascript helper to layout the structure of the page. <a href="https://github.com/keshibat/Resume_JS">here</a></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                    </div>
+                </div>
+            </div>
+        <!-- Modal for Logs Analysis image-->
+        <div aria-hidden="true" aria-labelledby="project1-modal" class="modal fade" id="project4" data-toggle="modal" role="dialog" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="project4-modal">Logs Analysis</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img alt="Logs Analysis Image" class="img-responsive" data-target="project4" data-toggle="modal" src="images/log_analysis.png ">
+                        <p>Build an internal reporting tool that will use information from the database to discover what kind of articles the site's readers like. My code create a reporting tool that prints out reports (in plain text) based on the data in the database. This reporting tool is a Python program using the psycopg2 module to connect to the database.<a href="https://github.com/keshibat/Logs-Analysis">here</a></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                    </div>
+                </div>
+            </div>
+        <!-- Modal for Item Catalog image-->
+        <div aria-hidden="true" aria-labelledby="project5-modal" class="modal fade" id="project5" data-toggle="modal" role="dialog" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="project5-modal">Item Catalog</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img alt="Item Catalog Image" class="img-responsive" data-target="project5" data-toggle="modal" src="images/item_catalog.png">
+                        <p>Making an application that provides a list of items within a variety of categories as well as provide a user registration and authentication system. Registered users will have the ability to post, edit and delete their own items.<a href="https://github.com/keshibat/Item_Catalog">here</a></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                    </div>
+                </div>
+            </div>
+        <!-- Modal Linux Server Configuration image-->
+        <div aria-hidden="true" aria-labelledby="project6-modal" class="modal fade" id="project6" data-toggle="modal" role="dialog" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="project6-modal">Linux Server Configuration</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img alt="Linux ServerConfiguration Image" class="img-responsive" data-target="project6" data-toggle="modal" src="images/linux.png">
+                        <p>Baseline installation and configuration of a Linux distribution and prepare it to host your web applications(Item Catalog), to run on a Linux Ubuntu server with Apache2, hosted on a Virtual Private Server with Amazon LightSail.<a href="https://github.com/keshibat/LinuxServerConfiguration">here</a></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Modal for Movie Trailer Website-->
-        <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="movie-website" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="movie-website">Movie Trailer Website</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="images/madlib_quiz.png" data-toggle="modal" data-target="#project2">
-                    <p>Project uses server-side code to dynamically create a website of movies using
-                    object-oriented Python. Store a list of your favorite movies, including box art imagery and a movie trailer URL. Generate a static web page allowing visitors to browse their movies and watch the trailer.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal for Online Resume-->
-            <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="online-resume" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="movie-website">Online Resume</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="images/madlib_quiz.png" data-toggle="modal" data-target="#project3"> Project uses server-side code to dynamically create a website of movies using
-                    object-oriented Python. Store a list of your favorite movies, including box art imagery and a movie trailer URL. Generate a static web page allowing visitors to browse their movies and watch the trailer.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
+        <script async src="js/jquery-3.2.1.min.js">
+        </script>
+        <script async src="js/bootstrap.min.js">
+        </script>
     </div>
 </body>
 </html>
